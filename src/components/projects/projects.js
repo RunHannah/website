@@ -8,14 +8,14 @@ const Projects = () => {
 
   return (
     <section>
-      <div className="project-wrapper">
+      <div className="flex flex-col m-8 items-center">
         <Title title="Projects" />
         {projects.map(project => {
           const { title, info, info2, url, repo, img, id } = project
           return (
-            <div className="justify-start bg-gray-200">
-              <div className="">
-                <h3 className="">{title || "Project Title"}</h3>
+            <div key={id} className="w-full lg:max-w-4xl lg:flex m-8">
+              <div className="flex-col mb-8 lg:w-1/2 lg:mr-16">
+                <h3 className="mb-4">{title || "Project Title"}</h3>
                 <div>
                   <p>
                     {info ||
@@ -23,35 +23,35 @@ const Projects = () => {
                   </p>
                   <p className="mb-4">{info2 || ""}</p>
                 </div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="cta-btn cta-btn--hero"
-                  href={url || "#!"}
-                >
-                  See Live
-                </a>
-
-                {repo && (
+                <span className="flex flex-row">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cta-btn text-color-main"
-                    href={repo}
+                    className="pr-4"
+                    href={url || "#!"}
+                  >
+                    See Live
+                  </a>
+
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pr-4"
+                    href={repo || "#!"}
                   >
                     Source Code
                   </a>
-                )}
+                </span>
               </div>
 
-              <div className="project-wrapper__image">
+              <div className="w-full">
                 <a
                   href={url || "#!"}
                   target="_blank"
                   aria-label="Project Link"
                   rel="noopener noreferrer"
                 >
-                  <div className="max-w-screen-sm">
+                  <div className="w-full">
                     <ProjectImg alt={title} filename={img} />
                   </div>
                 </a>
