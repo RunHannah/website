@@ -4,7 +4,6 @@ import Hero from "./hero/hero"
 import Projects from "./projects/projects"
 import About from "./about/about"
 import Contact from "./contact/contact"
-import Footer from "./footer/footer"
 import "../css/global.css"
 
 import {
@@ -36,7 +35,6 @@ function App() {
       <Projects />
       <About />
       <Contact />
-      <Footer />
     </PortfolioProvider>
   )
 }
