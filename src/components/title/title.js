@@ -1,7 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Title = ({ title }) => <h2 className="section-title">{title}</h2>
+const Title = ({ title }) => (
+  <h2 className="text-3xl font-bold uppercase tracking-wider text-orange-800">
+    {title}
+  </h2>
+)
 
 Title.propTypes = {
   title: PropTypes.string.isRequired,
