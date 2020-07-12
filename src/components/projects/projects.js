@@ -23,7 +23,13 @@ const Projects = () => {
                     {info ||
                       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae."}
                   </p>
-                  <p className="mb-4">{info2 || ""}</p>
+                  <ul className="my-4 flex flex-row flex-wrap justify-between">
+                    {info2.split(",").map((item, index) => (
+                      <li key={index} className="text-xs">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <span className="flex flex-row justify-between md:justify-start">
                   <a
