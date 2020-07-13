@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import Fade from "react-reveal/Fade"
 import PortfolioContext from "../../context/context"
-import Title from "../title/title"
+import Title from "../Title/Title"
 import ProjectImg from "../image/projectImg"
 
 const Projects = () => {
@@ -24,10 +24,11 @@ const Projects = () => {
     <section id="projects">
       <div className="flex flex-col m-8 items-center content-center">
         <Title title="Projects" />
-        {projects.map(project => {
+        {projects.map((project, index) => {
           const { title, info, info2, url, repo, img, id } = project
           return (
             <Fade
+              key={index}
               left={isDesktop}
               bottom={isMobile}
               duration={1000}

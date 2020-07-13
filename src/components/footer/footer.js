@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons"
+import { faAngleUp, faCode } from "@fortawesome/free-solid-svg-icons"
 import {
   faGithub,
   faLinkedinIn,
@@ -31,18 +31,18 @@ const Footer = () => {
             const { id, name, url } = network
             let fontName
 
-            {
-              switch (name) {
-                case "twitter":
-                  fontName = faTwitter
-                  break
-                case "linkedin":
-                  fontName = faLinkedinIn
-                  break
-                case "github":
-                  fontName = faGithub
-                  break
-              }
+            switch (name) {
+              case "twitter":
+                fontName = faTwitter
+                break
+              case "linkedin":
+                fontName = faLinkedinIn
+                break
+              case "github":
+                fontName = faGithub
+                break
+              default:
+                fontName = faCode
             }
 
             return (
