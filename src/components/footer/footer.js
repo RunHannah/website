@@ -15,8 +15,13 @@ const Footer = () => {
 
   return (
     <footer className="text-center">
-      <span className="mb-5 text-xl lg:text-2xl cursor-pointer">
-        <Link to="hero" smooth duration={1000}>
+      <span>
+        <Link
+          to="hero"
+          smooth
+          duration={1000}
+          className="mb-5 text-2xl lg:text-2xl cursor-pointer text-indigo-600"
+        >
           <FontAwesomeIcon icon={faAngleUp} />
         </Link>
       </span>

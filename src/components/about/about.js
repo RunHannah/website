@@ -1,4 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Title from "../Title/Title"
 import PortfolioContext from "../../context/context"
 
@@ -19,7 +21,11 @@ const About = () => {
           {paragraphThree && (
             <ul className="my-4 flex flex-row flex-wrap justify-between">
               {paragraphThree.split(",").map((item, index) => (
-                <li key={index} className="text-xs">
+                <li key={index} className="text-sm mr-3">
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className="mr-1 text-yellow-600"
+                  />
                   {item}
                 </li>
               ))}
