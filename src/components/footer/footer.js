@@ -25,7 +25,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faAngleUp} />
         </Link>
       </span>
-      <div className="flex flex-row my-4 justify-around">
+      <div className="flex flex-row my-4 justify-center">
         {networks &&
           networks.map(network => {
             const { id, name, url } = network
@@ -52,7 +52,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label={name}
-                className="text-yellow-600 text-xl lg:text-2xl"
+                className="text-yellow-600 text-xl lg:text-2xl mx-4"
               >
                 <FontAwesomeIcon icon={fontName} />
               </a>
