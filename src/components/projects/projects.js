@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="flex flex-col m-8 items-center content-center">
-        <Title title="Projects" />
+        <Title title="Some Things I've Built" />
         {projects.map((project, index) => {
           const { title, info, info2, url, repo, img, id } = project
           return (
@@ -45,9 +45,9 @@ const Projects = () => {
                       {info ||
                         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae."}
                     </p>
-                    <ul className="my-4 flex flex-row flex-wrap justify-between">
+                    <ul className="my-4 grid">
                       {info2.split(",").map((item, index) => (
-                        <li key={index} className="text-xs">
+                        <li key={index} className="tools text-xs">
                           {item}
                         </li>
                       ))}
@@ -57,7 +57,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-center w-32 py-2 md:mr-2 border-solid border-2 border-yellow-600 text-orange-800 font-bold bg-gray-300"
+                      className="text-sm text-center w-32 py-2 md:mr-2 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold bg-gray-300"
                       href={url || "#!"}
                     >
                       See Live
@@ -66,7 +66,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-center w-32 py-2 border-solid border-2 border-yellow-600 text-orange-800 font-bold bg-gray-300"
+                      className="text-sm text-center w-32 py-2 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold bg-gray-300"
                       href={repo || "#!"}
                     >
                       Source Code

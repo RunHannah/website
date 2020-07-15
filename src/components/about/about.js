@@ -40,9 +40,9 @@ const About = () => {
             <p className="mb-4">Here are some of the technologies I use: </p>
 
             {paragraphThree && (
-              <ul className="my-4 flex flex-row flex-wrap justify-between">
+              <ul className="my-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7">
                 {paragraphThree.split(",").map((item, index) => (
-                  <li key={index} className="text-sm mr-3">
+                  <li key={index} className="tools text-sm mr-3">
                     <FontAwesomeIcon
                       icon={faAngleRight}
                       className="mr-1 text-yellow-600"

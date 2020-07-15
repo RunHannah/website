@@ -42,7 +42,7 @@ const Header = () => {
               to="projects"
               smooth
               duration={1000}
-              className="mx-6 w-24 p-2 border-solid border-2 border-yellow-600 text-orange-800 font-bold"
+              className="mx-6 w-24 p-2 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold"
               href={`/#projects`}
             >
               Projects
@@ -51,7 +51,7 @@ const Header = () => {
               to="about"
               smooth
               duration={1000}
-              className="mx-6 w-24 p-2 border-solid border-2 border-yellow-600 text-orange-800 font-bold"
+              className="mx-6 w-24 p-2 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold"
               href={`/#about`}
             >
               About
@@ -60,7 +60,7 @@ const Header = () => {
               to="contact"
               smooth
               duration={1000}
-              className="mx-6 w-24 p-2 border-solid border-2 border-yellow-600 text-orange-800 font-bold"
+              className="mx-6 w-24 p-2 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold"
               href={`/#contact`}
             >
               Contact
