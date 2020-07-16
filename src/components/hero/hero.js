@@ -30,11 +30,15 @@ const Header = () => {
         distance="30px"
       >
         <div className="h-screen flex flex-col m-8 mt-0 md:max-w-4xl md:mx-8 lg:m-auto text-center justify-center">
-          <h1 className="text-3xl mb-12 leading-normal md:w-8/12 md:text-left">
+          <h1 className="text-2xl text-left md:text-3xl lg:text-4xl mb-12 leading-normal md:w-8/12 lg:3/4">
             {title || "Hi, I'm"}{" "}
-            <span className="text-orange-800 font-bold">{name}</span>
+            <span className=" text-4xl md:text-4xl lg:text-6xl text-orange-800 font-extrabold">
+              {name}
+            </span>
             <br />
-            <span className="text-yellow-600">JavaScript engineer </span>
+            <span className="javascript text-yellow-600">
+              JavaScript engineer{" "}
+            </span>
             {subtitle}
           </h1>
           <span className="flex flex-row justify-center">

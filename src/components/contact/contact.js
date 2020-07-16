@@ -12,14 +12,16 @@ const Contact = () => {
     <section id="contact">
       <div className="h-screen flex flex-col align-center mx-8 justify-around md:max-w-4xl lg:m-auto">
         <div className="mt-40">
-          <Title title="Contact" />
+          <span className="text-4xl md:text-5xl">
+            <Title title="Contact" />
+          </span>
           <Fade bottom duration={1000} delay={800} distance="30px">
             <div className="m-8 text-center">
-              <p className="mb-8">{cta}</p>
+              <p className="mb-8 text-xl">{cta}</p>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-24 p-2 border-solid border-2 border-yellow-600 text-orange-800 font-bold"
+                className="w-24 p-2 border-solid border-2 border-yellow-600 text-orange-800 font-bold rounded"
                 href={
                   email ? `mailto:${email}` : "https://github.com/runHannah"
                 }

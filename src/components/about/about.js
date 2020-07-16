@@ -7,7 +7,13 @@ import PortfolioContext from "../../context/context"
 
 const About = () => {
   const { about } = useContext(PortfolioContext)
-  const { paragraphOne, paragraphTwo, paragraphThree, resume } = about
+  const {
+    paragraphOne,
+    paragraphTwo,
+    paragraphThree,
+    paragraphFour,
+    resume,
+  } = about
 
   const [isDesktop, setIsDesktop] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -25,7 +31,9 @@ const About = () => {
   return (
     <section id="about">
       <div className="flex flex-col mt-32 mx-8 justify-center md:max-w-4xl lg:mx-auto">
-        <Title title="About Me" />
+        <span className="about sm:text-xl md:text-3xl flex items-center justify-center">
+          <Title className="about" title="About Me" />
+        </span>
 
         <Fade
           left={isDesktop}
@@ -37,11 +45,12 @@ const About = () => {
           <div className="my-8">
             <p className="mb-4">{paragraphOne}</p>
             <p className="mb-4">{paragraphTwo}</p>
+            <p className="mb-4">{paragraphThree}</p>
             <p className="mb-4">Here are some of the technologies I use: </p>
 
-            {paragraphThree && (
-              <ul className="my-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7">
-                {paragraphThree.split(",").map((item, index) => (
+            {paragraphFour && (
+              <ul className="my-4 sm:text-2xl md:text-3xl grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3">
+                {paragraphFour.split(",").map((item, index) => (
                   <li key={index} className="tools text-sm mr-3">
                     <FontAwesomeIcon
                       icon={faAngleRight}
@@ -57,7 +66,7 @@ const About = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cta-btn cta-btn--resume"
+                  className="cta-resume"
                   href={resume}
                 >
                   Resume

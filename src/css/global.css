@@ -39,6 +39,44 @@ body {
   font-family: "Raleway";
 }
 
+.javascript {
+  font-family: "SF Mono";
+}
+
+.projects::before,
+.projects::after,
+.about::before,
+.about::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 35px;
+  background-color: rgb(48, 60, 85);
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .tools {
   font-family: "SF Mono";
+}
+
+@media (min-width: 768px) {
+  .projects::before,
+  .projects::after,
+  .about::before,
+  .about::after {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects::before,
+  .projects::after,
+  .about::before,
+  .about::after {
+    width: 150px;
+  }
 }

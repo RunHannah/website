@@ -11,11 +11,13 @@ export const heroData = {
 export const aboutData = {
   img: "profile.jpg",
   paragraphOne:
-    "Hi there, I'm Hannah! I'm a former budget and public policy analyst turned JavaScript engineer. My passion for learning how things work led me to a career in software and web development. My goal is to deliver solutions using modern JavaScript technologies on a collaborative team.",
+    "Hi there, I'm Hannah! I'm a former budget and public policy analyst turned JavaScript engineer.",
   paragraphTwo:
-    "Currently I'm a Frontend Developer at a creative agency in Los Angeles, CA working on a variety of sites and maintaining a custom React CMS platform. In my free time I'm tinkering with Node.js, Express, RESTful APIs, Gatsby, and Tailwind.",
+    "My passion for learning how things work led me to a career in software and web development. My goal is to deliver solutions writing clean code and to work on a collaborative team.",
   paragraphThree:
-    "JavaScript, React, Gatsby, Express, Node.js, MongoDB, PostgreSQL",
+    "Currently I'm a Frontend Developer at a creative agency in Los Angeles, CA working on a variety of sites and maintaining a custom React CMS platform.",
+  paragraphFour:
+    " JavaScript, React, Gatsby, Express, Node.js, MongoDB, PostgreSQL",
 }
 
 // PROJECTS DATA
@@ -36,7 +38,7 @@ export const projectsData = [
     img: "nps.jpg",
     title: "Personal Finance Tracker",
     info:
-      "A data visualization tool to monitor your expenses by month and category.",
+      "A visualization app to monitor your expenses by month and category using Chart.js.",
     info2: "React, Express, Node.js, MongoDB, Chart.js",
     url: "",
     repo: "https://github.com/RunHannah/finance-tracker",

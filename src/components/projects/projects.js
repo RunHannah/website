@@ -3,6 +3,9 @@ import Fade from "react-reveal/Fade"
 import PortfolioContext from "../../context/context"
 import Title from "../Title/Title"
 import ProjectImg from "../image/projectImg"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext)
@@ -23,7 +26,9 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="flex flex-col m-8 items-center content-center">
-        <Title title="Some Things I've Built" />
+        <span className="projects sm:text-2xl md:text-3xl flex items-center justify-center">
+          <Title title="Some Things I've Built" />
+        </span>
         {projects.map((project, index) => {
           const { title, info, info2, url, repo, img, id } = project
           return (
@@ -53,23 +58,23 @@ const Projects = () => {
                       ))}
                     </ul>
                   </div>
-                  <span className="flex flex-row justify-between md:justify-start">
+                  <span className="flex flex-row md:justify-start">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-center w-32 py-2 md:mr-2 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold bg-gray-300"
+                      className="text-2xl mr-5 rounded text-orange-800"
                       href={url || "#!"}
                     >
-                      See Live
+                      <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </a>
 
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-center w-32 py-2 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold bg-gray-300"
+                      className="text-2xl mr-5 rounded text-orange-800"
                       href={repo || "#!"}
                     >
-                      Source Code
+                      <FontAwesomeIcon icon={faGithub} />
                     </a>
                   </span>
                 </div>
