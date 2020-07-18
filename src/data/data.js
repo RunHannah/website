@@ -25,6 +25,7 @@ export const projectsData = [
   {
     id: uuidv4(),
     img: "nps.jpg",
+    img2: "nps_map.png",
     title: "National Park Service",
     info:
       "View a list of national parks, national monuments, and other natural and cultural resources by state. Based on the official site's landing and park list pages.",
@@ -36,6 +37,7 @@ export const projectsData = [
   {
     id: uuidv4(),
     img: "nps.jpg",
+    img2: "nps_map.png",
     title: "Personal Finance Tracker",
     info:
       "A visualization app to monitor your expenses by month and category using Chart.js.",
@@ -46,6 +48,7 @@ export const projectsData = [
   {
     id: uuidv4(),
     img: "nps.jpg",
+    img2: "nps_map.png",
     title: "",
     info: "",
     info2: "",

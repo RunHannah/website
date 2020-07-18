@@ -30,7 +30,7 @@ const Projects = () => {
           <Title title="Some Things I've Built" />
         </span>
         {projects.map((project, index) => {
-          const { title, info, info2, url, repo, img, id } = project
+          const { title, info, info2, url, repo, img, img2, id } = project
           return (
             <Fade
               key={index}
@@ -40,7 +40,10 @@ const Projects = () => {
               delay={500}
               distance="30px"
             >
-              <div key={id} className="w-full lg:max-w-4xl lg:flex m-8">
+              <div
+                key={id}
+                className="project md:w-4/5 lg:max-w-5xl lg:flex xl:max-w-6xl m-8"
+              >
                 <div className="flex-col mb-8 lg:w-1/2 lg:mr-16">
                   <h3 className="mb-4 text-lg font-bold text-yellow-600">
                     {title || "Project Title"}
@@ -79,15 +82,25 @@ const Projects = () => {
                   </span>
                 </div>
 
-                <div className="w-full">
+                <div className="w-full lg:relative">
                   <a
                     href={url || "#!"}
                     target="_blank"
                     aria-label="Project Link"
                     rel="noopener noreferrer"
                   >
-                    <div className="w-full">
+                    <div className="w-full lg:absolute lg:opacity-100 lg:hover:opacity-0">
                       <ProjectImg alt={title} filename={img} />
+                    </div>
+                  </a>
+                  <a
+                    href={url || "#!"}
+                    target="_blank"
+                    aria-label="Project Link"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="hidden lg:block lg:w-full lg:absolute lg:opacity-0 lg:hover:opacity-100 lg:transition lg:duration-700 lg:ease-in-out">
+                      <ProjectImg alt={title} filename={img2} />
                     </div>
                   </a>
                 </div>

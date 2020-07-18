@@ -72,11 +72,27 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 961px) and (orientation: landscape) {
+  .project {
+    min-height: 400px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
   .projects::before,
   .projects::after,
   .about::before,
   .about::after {
     width: 150px;
   }
+
+  .project {
+    min-height: 500px;
+  }
+
+  /* .projImg > picture > img {
+    width: 550px;
+    height: 400px;
+  } */
 }
