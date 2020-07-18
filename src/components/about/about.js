@@ -51,7 +51,7 @@ const About = () => {
             {paragraphFour && (
               <ul className="my-4 sm:text-2xl md:text-3xl grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3">
                 {paragraphFour.split(",").map((item, index) => (
-                  <li key={index} className="tools text-sm mr-3">
+                  <li key={index} className="tools text-base mr-3 mb-3">
                     <FontAwesomeIcon
                       icon={faAngleRight}
                       className="mr-1 text-yellow-600"

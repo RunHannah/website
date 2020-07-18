@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="flex flex-col m-8 items-center content-center">
-        <span className="projects sm:text-2xl md:text-3xl flex items-center justify-center">
+        <span className="projects sm:text-xl md:text-3xl flex items-center justify-center">
           <Title title="Some Things I've Built" />
         </span>
         {projects.map((project, index) => {
@@ -45,7 +45,7 @@ const Projects = () => {
                 className="project md:w-4/5 lg:max-w-5xl lg:flex xl:max-w-6xl m-8"
               >
                 <div className="flex-col mb-8 lg:w-1/2 lg:mr-16">
-                  <h3 className="mb-4 text-lg font-bold text-yellow-600">
+                  <h3 className="mb-4 font-bold text-yellow-600 text-lg lg:text-xl xl:text-2xl">
                     {title || "Project Title"}
                   </h3>
                   <div>
@@ -55,7 +55,7 @@ const Projects = () => {
                     </p>
                     <ul className="my-4 grid">
                       {info2.split(",").map((item, index) => (
-                        <li key={index} className="tools text-xs">
+                        <li key={index} className="tools text-xs lg:text-sm">
                           {item}
                         </li>
                       ))}
