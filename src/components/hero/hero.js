@@ -29,10 +29,10 @@ const Header = () => {
         delay={500}
         distance="30px"
       >
-        <div className="h-screen flex flex-col m-8 mt-0 md:max-w-4xl md:mx-8 lg:m-auto text-center justify-center">
-          <h1 className="text-2xl text-left md:text-3xl lg:text-4xl mb-12 leading-normal md:w-8/12 lg:3/4">
+        <div className="h-screen m-8 flex flex-col mt-0 md:w-4xl md:mx-8 text-center justify-center">
+          <h1 className="mb-8 text-2xl text-left md:text-3xl lg:text-4xl leading-normal md:w-3/4">
             {title || "Hi, I'm"}{" "}
-            <span className=" text-4xl md:text-4xl lg:text-6xl text-orange-800 font-extrabold">
+            <span className="text-4xl md:text-4xl lg:text-6xl text-orange-800 font-extrabold">
               {name}
             </span>
             <br />
@@ -46,7 +46,7 @@ const Header = () => {
               to="projects"
               smooth
               duration={1000}
-              className="mx-6 p-3 lg:py-4 lg:px-5 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold"
+              className="ml-5 mr-0 p-3 lg:py-4 lg:px-5 border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold"
               href={`/#projects`}
             >
               Projects
@@ -64,7 +64,7 @@ const Header = () => {
               to="contact"
               smooth
               duration={1000}
-              className="mx-6 p-3 lg:py-4 lg:px-5  border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold"
+              className="ml-0 mr-5 p-3 lg:py-4 lg:px-5  border-solid border-2 border-yellow-600 rounded text-orange-800 font-bold"
               href={`/#contact`}
             >
               Contact
