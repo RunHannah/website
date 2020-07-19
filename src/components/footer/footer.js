@@ -60,7 +60,7 @@ const Footer = () => {
           })}
       </div>
       <hr />
-      <p className="mb-4 text-orange-800 text-sm">
+      <p className="made mb-4 text-orange-800 text-sm">
         Built with Gatsby and Tailwind CSS
       </p>
     </footer>

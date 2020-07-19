@@ -57,7 +57,9 @@ body {
   margin-right: 10px;
 }
 
-.tools {
+.tools,
+.made,
+.btn-text {
   font-family: "SF Mono";
 }
 
