@@ -42,7 +42,7 @@ const Projects = () => {
             >
               <div key={id} className="project m-8 w-full md:flex lg:flex">
                 <div className="flex-col mb-8 md:w-1/2 md:mr-16">
-                  <h3 className="mb-4 font-bold text-yellow-600 text-lg lg:text-xl xl:text-2xl">
+                  <h3 className="projectTitle mb-4 font-bold text-lg lg:text-xl xl:text-2xl">
                     {title || "Project Title"}
                   </h3>
                   <div>
@@ -62,7 +62,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-2xl mr-5 rounded text-orange-800"
+                      className="projectLink text-2xl mr-5 rounded"
                       href={url || "#!"}
                     >
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -71,7 +71,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-2xl mr-5 rounded text-orange-800"
+                      className="projectLink text-2xl mr-5 rounded"
                       href={repo || "#!"}
                     >
                       <FontAwesomeIcon icon={faGithub} />

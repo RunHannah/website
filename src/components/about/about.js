@@ -54,7 +54,7 @@ const About = () => {
                   <li key={index} className="tools text-base mr-3 mb-3">
                     <FontAwesomeIcon
                       icon={faAngleRight}
-                      className="mr-1 text-yellow-600"
+                      className="angleRight mr-1"
                     />
                     {item}
                   </li>

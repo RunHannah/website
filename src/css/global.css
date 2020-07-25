@@ -28,18 +28,22 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #e2e8f0;
 }
 
 body {
   font-family: "Open Sans";
+  background-color: #2b0f2e;
+  color: #e8e8ee;
 }
 
 .title {
   font-family: "Raleway";
 }
 
-.javascript {
+.javascript,
+.tools,
+.made,
+.btn-text {
   font-family: "SF Mono";
 }
 
@@ -51,16 +55,34 @@ body {
   display: block;
   height: 1px;
   width: 35px;
-  background-color: rgb(48, 60, 85);
+  background-color: #e8e8ee;
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.tools,
-.made,
 .btn-text {
-  font-family: "SF Mono";
+  border-color: #ffce5c;
+}
+
+.title,
+.javascript,
+.name {
+  color: #9cb9e7;
+}
+
+.projectTitle,
+.projectLink,
+.socialIcon,
+.arrowUp,
+.angleRight,
+.made {
+  color: #ffce5c;
+}
+
+.arrowUp,
+.made {
+  color: #dddce5;
 }
 
 @media (min-width: 768px) {
