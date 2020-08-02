@@ -36,24 +36,14 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: "nps.jpg",
-    img2: "nps_map.png",
-    title: "Personal Finance Tracker",
+    img: "barCharts.png",
+    img2: "pieCharts.png",
+    title: "MyMoney",
     info:
-      "A visualization app to monitor your expenses by month and category using Chart.js.",
+      "A personal finance app to track your spending habits. Enter transactions manually or upload a CSV file, and view charts by month and category.",
     info2: "React, Express, Node.js, MongoDB, Chart.js",
-    url: "",
+    url: "https://my-money-mern.herokuapp.com/",
     repo: "https://github.com/RunHannah/finance-tracker",
-  },
-  {
-    id: uuidv4(),
-    img: "nps.jpg",
-    img2: "nps_map.png",
-    title: "",
-    info: "",
-    info2: "",
-    url: "",
-    repo: "https://github.com/runHannah",
   },
 ]
 
