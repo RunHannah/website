@@ -1,42 +1,26 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import {
+  faGithub,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <header className="mb-6">
+    <div className="flex flex-row justify-end my-4 mr-6">
+      <Link to="/" className="socialIcon text-xl lg:text-2xl mx-4">
+        <FontAwesomeIcon icon={faGithub} />
+      </Link>
+      <Link to="/" className="socialIcon text-xl lg:text-2xl mx-4">
+        <FontAwesomeIcon icon={faLinkedinIn} />
+      </Link>
+      <Link to="/" className="socialIcon text-xl lg:text-2xl mx-4">
+        <FontAwesomeIcon icon={faTwitter} />
+      </Link>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

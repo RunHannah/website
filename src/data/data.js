@@ -59,8 +59,8 @@ export const footerData = {
   networks: [
     {
       id: uuidv4(),
-      name: "twitter",
-      url: "https://twitter.com/yearofthecode",
+      name: "github",
+      url: "https://github.com/runhannah",
     },
     {
       id: uuidv4(),
@@ -69,8 +69,8 @@ export const footerData = {
     },
     {
       id: uuidv4(),
-      name: "github",
-      url: "https://github.com/runhannah",
+      name: "twitter",
+      url: "https://twitter.com/yearofthecode",
     },
   ],
 }
