@@ -24,7 +24,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv4(),
-    img: "nps.jpg",
+    img: "nps.png",
     img2: "nps_map.png",
     title: "National Park Service",
     info:
