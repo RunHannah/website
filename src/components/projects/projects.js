@@ -62,7 +62,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="projectLink text-2xl mr-5 rounded"
+                      className="projectLink text-2xl mr-5"
                       href={url || "#!"}
                     >
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -71,7 +71,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="projectLink text-2xl mr-5 rounded"
+                      className="projectLink text-2xl mr-5"
                       href={repo || "#!"}
                     >
                       <FontAwesomeIcon icon={faGithub} />

@@ -13,7 +13,7 @@ export const aboutData = {
   paragraphOne:
     "Hi there, I'm Hannah! I'm a former budget and public policy analyst turned JavaScript engineer.",
   paragraphTwo:
-    "My passion for learning how things work led me to a career in software and web development. My goal is to implement solid solutions towards any problem and to work on a collaborative team building helpful products.",
+    "My passion for learning how things work led me to a career in software and web development. My goal is to implement solid solutions towards any problem and to work on a collaborative team building helpful products for the end user.",
   paragraphThree:
     "Currently I'm a Frontend Engineer at a creative agency in Los Angeles, CA working on a variety of sites and maintaining a custom React CMS platform.",
   paragraphFour:
@@ -40,7 +40,7 @@ export const projectsData = [
     img2: "pieCharts.png",
     title: "MyMoney",
     info:
-      "A personal finance app to track your spending habits. Enter transactions manually or upload a CSV file, and view charts by month and category.",
+      "A personal finance app to track your spending habits. Enter transactions manually or upload a CSV file, to view charts by month and category.",
     info2: "React, Express, Node.js, MongoDB, Chart.js",
     url: "https://my-money-mern.herokuapp.com/",
     repo: "https://github.com/RunHannah/finance-tracker",

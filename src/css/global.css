@@ -37,6 +37,18 @@ body {
   color: #e8e8ee;
 }
 
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+
+.svg-inline--fa {
+  height: 1em;
+}
+
 ::-webkit-scrollbar {
   display: none; /* Chrome */
 }

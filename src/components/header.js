@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import {
   faGithub,
   faLinkedinIn,
@@ -8,32 +7,35 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Header = () => (
-  <header className="mb-6">
+  <header>
     <div className="flex flex-row justify-end my-4 mr-6">
-      <Link
-        to="https://github.com/runhannah"
+      <a
+        href="https://github.com/runhannah"
         target="_blank"
+        rel="noreferrer"
         aria-label="github"
         className="socialIcon text-xl lg:text-2xl mx-4"
       >
         <FontAwesomeIcon icon={faGithub} />
-      </Link>
-      <Link
-        to="https://www.linkedin.com/in/hannahlee1/"
+      </a>
+      <a
+        href="https://www.linkedin.com/in/hannahlee1/"
         target="_blank"
+        rel="noreferrer"
         aria-label="linkedin"
         className="socialIcon text-xl lg:text-2xl mx-4"
       >
         <FontAwesomeIcon icon={faLinkedinIn} />
-      </Link>
-      <Link
-        to="https://twitter.com/yearofthecode"
+      </a>
+      <a
+        href="https://twitter.com/yearofthecode"
         target="_blank"
+        rel="noreferrer"
         aria-label="twitter"
         className="socialIcon text-xl lg:text-2xl mx-4"
       >
         <FontAwesomeIcon icon={faTwitter} />
-      </Link>
+      </a>
     </div>
   </header>
 )

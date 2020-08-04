@@ -21,7 +21,7 @@ const Contact = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-text w-24 p-3 lg:py-4 lg:px-5 border-solid border-2 font-bold rounded"
+                className="btn-text w-48 p-3 lg:py-4 lg:px-5 border-solid border-2 font-bold rounded inline-block"
                 href={
                   email ? `mailto:${email}` : "https://github.com/runHannah"
                 }
