@@ -5,7 +5,7 @@ import PortfolioContext from "../../context/context"
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext)
-  const { title, name, subtitle } = hero
+  const { greeting, name, role, subtitle } = hero
 
   const [isDesktop, setIsDesktop] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -31,12 +31,12 @@ const Header = () => {
       >
         <div className="h-screen m-8 flex flex-col mt-0 md:w-4xl md:mx-8 text-center justify-center">
           <h1 className="mb-8 text-2xl text-left md:text-3xl lg:text-4xl leading-normal md:w-3/4">
-            {title || "Hi, I'm"}{" "}
+            {greeting}
             <span className="name text-4xl md:text-4xl lg:text-6xl font-extrabold">
               {name}
             </span>
             <br />
-            <span className="javascript">JavaScript engineer </span>
+            <span className="role">{role}</span>
             {subtitle}
           </h1>
           <span className="flex flex-row justify-center">

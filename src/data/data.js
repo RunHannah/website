@@ -2,8 +2,9 @@ import { v4 as uuidv4 } from "uuid"
 
 // HERO DATA
 export const heroData = {
-  title: "",
+  greeting: "Hi, I'm ",
   name: "Hannah",
+  role: "JavaScript Engineer ",
   subtitle: "who builds things using modern technologies",
 }
 
