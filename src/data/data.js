@@ -41,10 +41,10 @@ export const projectsData = [
     img2: "pieCharts.png",
     title: "MyMoney",
     info:
-      "A personal finance app to track your spending habits. Enter transactions manually or upload a CSV file, to view charts by month and category.",
+      "A personal finance app to track your spending habits. Enter transactions manually or upload a CSV file, to view charts by month and category. Includes JSON Web Tokens for user authentication.",
     info2: "React, Express, Node.js, MongoDB, Chart.js",
     url: "https://my-money-mern.herokuapp.com/",
-    repo: "https://github.com/RunHannah/finance-tracker",
+    repo: "https://github.com/RunHannah/my-money",
   },
 ]
 
