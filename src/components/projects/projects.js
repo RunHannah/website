@@ -32,15 +32,15 @@ const Projects = () => {
         {projects.map((project, index) => {
           const { title, info, info2, url, repo, img, img2, id } = project
           return (
-            <Fade
-              key={index}
-              left={isDesktop}
-              bottom={isMobile}
-              duration={1000}
-              delay={500}
-              distance="30px"
-            >
-              <div key={id} className="project m-8 w-full md:flex lg:flex">
+            <div key={id} className="project m-8 w-full md:flex lg:flex">
+              <Fade
+                key={index}
+                left={isDesktop}
+                bottom={isMobile}
+                duration={1000}
+                delay={500}
+                distance="30px"
+              >
                 <div className="flex-col mb-8 md:w-1/2 md:mr-16">
                   <h3 className="projectTitle mb-4 font-bold text-lg lg:text-xl xl:text-2xl">
                     {title || "Project Title"}
@@ -78,7 +78,14 @@ const Projects = () => {
                     </a>
                   </span>
                 </div>
-
+              </Fade>
+              <Fade
+                right={isDesktop}
+                bottom={isMobile}
+                duration={1000}
+                delay={1000}
+                distance="30px"
+              >
                 <div className="w-full lg:relative">
                   <a
                     href={url || "#!"}
@@ -101,8 +108,8 @@ const Projects = () => {
                     </div>
                   </a>
                 </div>
-              </div>
-            </Fade>
+              </Fade>
+            </div>
           )
         })}
       </div>

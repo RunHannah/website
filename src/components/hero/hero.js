@@ -22,14 +22,14 @@ const Header = () => {
 
   return (
     <section id="hero">
-      <Fade
-        left={isDesktop}
-        bottom={isMobile}
-        duration={1000}
-        delay={500}
-        distance="30px"
-      >
-        <div className="h-screen m-8 flex flex-col mt-0 md:w-4xl md:mx-8 text-center justify-center">
+      <div className="h-screen m-8 flex flex-col mt-0 md:w-4xl md:mx-8 text-center justify-center">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={1000}
+          delay={500}
+          distance="30px"
+        >
           <h1 className="mb-8 text-2xl text-left md:text-3xl lg:text-4xl leading-normal md:w-3/4">
             {greeting}
             <span className="name text-4xl md:text-4xl lg:text-6xl font-extrabold">
@@ -39,12 +39,20 @@ const Header = () => {
             <span className="role">{role}</span>
             {subtitle}
           </h1>
-          <span className="flex flex-row justify-center">
+        </Fade>
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={1000}
+          delay={1000}
+          distance="30px"
+        >
+          <span className="flex flex-row justify-start">
             <Link
               to="projects"
               smooth
               duration={1000}
-              className="btn-text w-32 ml-5 mr-0 p-3 lg:py-4 lg:px-5 border-solid border-2 rounded font-bold"
+              className="btn-text w-32 ml-5 mr-0 p-3 md:ml-0 lg:py-4 lg:px-5 border-solid border-2 rounded font-bold"
               href={`/#projects`}
             >
               Projects
@@ -68,8 +76,8 @@ const Header = () => {
               Contact
             </Link>
           </span>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     </section>
   )
 }
