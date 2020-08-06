@@ -31,7 +31,7 @@ const About = () => {
 
   return (
     <section id="about">
-      <div className="flex flex-col mt-32 mx-8 justify-center md:max-w-4xl lg:mx-auto">
+      <div className="flex flex-col justify-center m-8 mt-32">
         <span className="about sm:text-xl md:text-3xl flex items-center justify-center">
           <Title className="about" title="About Me" />
         </span>
@@ -43,8 +43,8 @@ const About = () => {
           delay={1000}
           distance="30px"
         >
-          <div className="my-8 grid md:grid-cols-10 md:gap-10 lg:gap-6">
-            <div className="md:col-span-6 lg:col-span-7">
+          <div className="my-8 flex flex-col md:flex-row">
+            <div className="md:max-w-lg md:w-full lg:max-w-2xl">
               <p className="mb-4">{paragraphOne}</p>
               <p className="mb-4">{paragraphTwo}</p>
               <p className="mb-4">{paragraphThree}</p>
@@ -64,11 +64,7 @@ const About = () => {
                 </ul>
               )}
             </div>
-            <AboutImg
-              className="md:col-span-4 lg: col-span-3"
-              alt="profile picture"
-              filename={img}
-            />
+            <AboutImg alt="profile picture" filename={img} />
           </div>
         </Fade>
       </div>

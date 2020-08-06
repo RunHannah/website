@@ -32,7 +32,7 @@ const AboutImg = ({ filename, alt }) => (
       const imageFixed = image.node.childImageSharp.fluid
       return (
         <Img
-          className="rounded-full h-64 w-64 m-auto md:mt-0"
+          className="rounded-full h-64 w-64 m-auto md:mt-0 md:mr-0"
           alt={alt}
           fluid={imageFixed}
         />

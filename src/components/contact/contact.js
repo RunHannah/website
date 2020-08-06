@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="h-screen flex flex-col align-center mx-8 justify-around md:max-w-4xl lg:m-auto">
+      <div className="h-screen flex flex-col align-center mx-8 justify-around">
         <div className="mt-40">
           <span className="text-4xl md:text-5xl">
             <Title title="Contact" />
