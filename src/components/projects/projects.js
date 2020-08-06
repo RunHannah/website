@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="flex flex-col m-8 items-center content-center">
-        <span className="projects flex items-center sm:text-xl md:text-3xl justify-center">
+        <span className="projects flex items-center text-lg sm:text-xl md:text-3xl lg:text-4xl justify-center mb-4">
           <Title title="Some Things I've Built" />
         </span>
         {projects.map((project, index) => {
@@ -43,13 +43,10 @@ const Projects = () => {
               >
                 <div className="flex-col mb-8 md:w-1/2 md:mr-16">
                   <h3 className="projectTitle mb-4 font-bold text-lg lg:text-xl xl:text-2xl">
-                    {title || "Project Title"}
+                    {title}
                   </h3>
                   <div>
-                    <p>
-                      {info ||
-                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae."}
-                    </p>
+                    <p className="md:text-base lg:text-lg">{info}</p>
                     <ul className="my-4 grid">
                       {info2.split(",").map((item, index) => (
                         <li key={index} className="tools text-xs lg:text-sm">

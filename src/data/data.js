@@ -19,6 +19,7 @@ export const aboutData = {
     "Currently I'm a Frontend Engineer at a creative agency in Los Angeles, CA working on a variety of sites and maintaining a custom React CMS platform.",
   paragraphFour:
     " JavaScript, React, Gatsby, Express, Node.js, MongoDB, PostgreSQL",
+  paragraphFive: "Here are some of the technologies I use: ",
 }
 
 // PROJECTS DATA

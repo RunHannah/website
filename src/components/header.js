@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Header = () => (
   <header>
     <Fade right duration={1000} delay={500} distance="30px">
-      <div className="flex flex-row justify-end my-4 mr-6">
+      <div className="flex flex-row justify-end my-4 md:mr-6">
         <a
           href="https://github.com/runhannah"
           target="_blank"

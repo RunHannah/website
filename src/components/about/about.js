@@ -14,6 +14,7 @@ const About = () => {
     paragraphTwo,
     paragraphThree,
     paragraphFour,
+    paragraphFive,
   } = about
 
   const [isDesktop, setIsDesktop] = useState(false)
@@ -32,7 +33,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="flex flex-col justify-center m-8 mt-32">
-        <span className="about sm:text-xl md:text-3xl flex items-center justify-center">
+        <span className="about text-lg sm:text-xl md:text-3xl lg:text-4xl flex items-center justify-center mb-4">
           <Title className="about" title="About Me" />
         </span>
 
@@ -44,11 +45,11 @@ const About = () => {
           distance="30px"
         >
           <div className="my-8 flex flex-col md:flex-row">
-            <div className="md:max-w-lg md:w-full lg:max-w-2xl">
+            <div className="md:max-w-lg md:w-full lg:max-w-2xl md:text-base lg:text-lg">
               <p className="mb-4">{paragraphOne}</p>
               <p className="mb-4">{paragraphTwo}</p>
               <p className="mb-4">{paragraphThree}</p>
-              <p className="mb-4">Here are some of the technologies I use: </p>
+              <p className="mb-4">{paragraphFive}</p>
 
               {paragraphFour && (
                 <ul className="my-4 sm:text-2xl md:text-3xl grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
