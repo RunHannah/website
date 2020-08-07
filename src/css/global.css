@@ -111,12 +111,22 @@ body {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .paragraphs {
+    max-width: 25rem;
+  }
 }
 
 @media (min-width: 961px) and (orientation: landscape) {
   .project {
     min-height: 400px;
     height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .paragraphs {
+    max-width: 37rem;
   }
 }
 
@@ -131,9 +141,4 @@ body {
   .project {
     min-height: 500px;
   }
-
-  /* .projImg > picture > img {
-    width: 550px;
-    height: 400px;
-  } */
 }

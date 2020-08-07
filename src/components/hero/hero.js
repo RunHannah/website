@@ -50,14 +50,11 @@ const Hero = () => {
           <ul className="list-none flex flex-row justify-start">
             {links &&
               links.map(item => (
-                <li className="list-none" key={item.id}>
-                  <Link
-                    to={item.route}
-                    smooth
-                    duration={1000}
-                    className="btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border-2 rounded font-bold"
-                    href={item.path}
-                  >
+                <li
+                  key={item.id}
+                  className="list-none btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border-2 rounded font-bold"
+                >
+                  <Link to={item.route} smooth duration={1000} href={item.path}>
                     {item.section}
                   </Link>
                 </li>

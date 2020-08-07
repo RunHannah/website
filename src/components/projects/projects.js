@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="flex flex-col m-8 items-center content-center">
-        <span className="projects flex items-center text-lg sm:text-xl md:text-3xl lg:text-4xl justify-center mb-4">
+        <span className="projects flex items-center text-base sm:text-xl md:text-3xl lg:text-4xl justify-center mb-4">
           <Title title="Some Things I've Built" />
         </span>
         {projects.map((project, index) => {

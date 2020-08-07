@@ -17,7 +17,7 @@ const Contact = () => {
           </span>
           <Fade bottom duration={1000} delay={800} distance="30px">
             <div className="text-center">
-              <p className="m-10 text-xl mx-auto">{cta}</p>
+              <p className="m-10 text-base sm:text-xl mx-auto">{cta}</p>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
