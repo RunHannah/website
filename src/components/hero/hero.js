@@ -3,9 +3,9 @@ import { Link } from "react-scroll"
 import Fade from "react-reveal/Fade"
 import PortfolioContext from "../../context/context"
 
-const Header = () => {
+const Hero = () => {
   const { hero } = useContext(PortfolioContext)
-  const { greeting, name, role, subtitle } = hero
+  const { greeting, name, role, subtitle, links } = hero
 
   const [isDesktop, setIsDesktop] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <section id="hero">
-      <div className="h-screen m-8 flex flex-col mt-0 md:w-4xl md:mx-8 text-center justify-center">
+      <div className="h-screen m-8 flex flex-col mt-0 text-center justify-center md:w-4xl md:mx-8 ">
         <Fade
           left={isDesktop}
           bottom={isMobile}
@@ -47,39 +47,26 @@ const Header = () => {
           delay={1000}
           distance="30px"
         >
-          <span className="flex flex-row justify-start">
-            <Link
-              to="projects"
-              smooth
-              duration={1000}
-              className="btn-text w-32 ml-5 mr-0 p-3 md:ml-0 lg:py-4 lg:px-5 border-solid border-2 rounded font-bold"
-              href={`/#projects`}
-            >
-              Projects
-            </Link>
-            <Link
-              to="about"
-              smooth
-              duration={1000}
-              className="btn-text w-32 mx-6 p-3 lg:py-4 lg:px-5 border-solid border-2 rounded font-bold"
-              href={`/#about`}
-            >
-              About
-            </Link>
-            <Link
-              to="contact"
-              smooth
-              duration={1000}
-              className="btn-text w-32 ml-0 mr-5 p-3 lg:py-4 lg:px-5  border-solid border-2 rounded font-bold"
-              href={`/#contact`}
-            >
-              Contact
-            </Link>
-          </span>
+          <ul className="list-none flex flex-row justify-start">
+            {links &&
+              links.map(item => (
+                <li className="list-none" key={item.id}>
+                  <Link
+                    to={item.route}
+                    smooth
+                    duration={1000}
+                    className="btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border-2 rounded font-bold"
+                    href={item.path}
+                  >
+                    {item.section}
+                  </Link>
+                </li>
+              ))}
+          </ul>
         </Fade>
       </div>
     </section>
   )
 }
 
-export default Header
+export default Hero

@@ -6,6 +6,26 @@ export const heroData = {
   name: "Hannah",
   role: "JavaScript Engineer ",
   subtitle: "who builds things using modern technologies",
+  links: [
+    {
+      id: uuidv4(),
+      section: "Projects",
+      path: "/#projects",
+      route: "projects",
+    },
+    {
+      id: uuidv4(),
+      section: "About",
+      path: "/#about",
+      route: "about",
+    },
+    {
+      id: uuidv4(),
+      section: "Contact",
+      path: "/#contact",
+      route: "contact",
+    },
+  ],
 }
 
 // ABOUT DATA
