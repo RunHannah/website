@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import Fade from "react-reveal/Fade"
 import PortfolioContext from "../../context/context"
-import Title from "../Title/Title"
+import Label from "../label/label"
 import Footer from "../footer/footer"
 
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="h-screen flex flex-col align-center mx-8 justify-around">
         <div className="mt-40">
           <span className="text-4xl md:text-5xl lg:text-6xl">
-            <Title title="Contact" />
+            <Label title="Contact" />
           </span>
           <Fade bottom duration={1000} delay={800} distance="30px">
             <div className="text-center">

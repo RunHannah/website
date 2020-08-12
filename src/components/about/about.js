@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Fade from "react-reveal/Fade"
-import Title from "../Title/Title"
+import Label from "../label/label"
 import AboutImg from "../image/aboutImg"
 import PortfolioContext from "../../context/context"
 
@@ -34,7 +34,7 @@ const About = () => {
     <section id="about">
       <div className="flex flex-col justify-center m-8 mt-32">
         <span className="about text-base sm:text-xl md:text-3xl lg:text-4xl flex items-center justify-center mb-4">
-          <Title className="about" title="About Me" />
+          <Label className="about" title="About Me" />
         </span>
 
         <Fade

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import Fade from "react-reveal/Fade"
 import PortfolioContext from "../../context/context"
-import Title from "../Title/Title"
+import Label from "../label/label"
 import ProjectImg from "../image/projectImg"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
@@ -27,7 +27,7 @@ const Projects = () => {
     <section id="projects">
       <div className="flex flex-col m-8 items-center content-center">
         <span className="projects flex items-center text-base sm:text-xl md:text-3xl lg:text-4xl justify-center mb-4">
-          <Title title="Some Things I've Built" />
+          <Label title="Some Things I've Built" />
         </span>
         {projects.map((project, index) => {
           const { title, info, info2, url, repo, img, img2, id } = project
