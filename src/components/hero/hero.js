@@ -52,7 +52,7 @@ const Hero = () => {
               links.map(item => (
                 <li
                   key={item.id}
-                  className="list-none btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border-2 rounded font-bold"
+                  className="list-none btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border rounded font-bold"
                 >
                   <Link to={item.route} smooth duration={1000} href={item.path}>
                     {item.section}
