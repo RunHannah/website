@@ -3,7 +3,7 @@
 </p>
 <p align="center">
   Built with Gatsby and Tailwind CSS
-</p>_
+</p>
 
 ## 🚀 Quick start
 
