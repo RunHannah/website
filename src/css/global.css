@@ -117,6 +117,12 @@ body {
   }
 }
 
+@media (min-width: 820px) {
+  .paragraphs {
+    max-width: 30rem;
+  }
+}
+
 @media (min-width: 961px) and (orientation: landscape) {
   .project {
     min-height: 400px;
