@@ -49,11 +49,11 @@ const About = () => {
               <p className="mb-4">{paragraphOne}</p>
               <p className="mb-4">{paragraphTwo}</p>
               <p className="mb-4">{paragraphThree}</p>
-              <p className="mb-4">{paragraphFive}</p>
+              <p className="mb-4">{paragraphFour}</p>
 
-              {paragraphFour && (
+              {paragraphFive && (
                 <ul className="my-4 sm:text-2xl md:text-3xl grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-                  {paragraphFour.split(",").map((item, index) => (
+                  {paragraphFive.split(",").map((item, index) => (
                     <li
                       key={index}
                       className="tools text-sm sm:text-base mr-3 mb-3"

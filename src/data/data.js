@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from "uuid"
 export const heroData = {
   greeting: "Hi, I'm ",
   name: "Hannah",
-  role: "JavaScript Engineer ",
-  subtitle: "who builds things using modern technologies",
+  role: "Software Engineer ",
+  subtitle: "who builds products using modern technologies",
   links: [
     {
       id: uuidv4(),
@@ -32,18 +32,29 @@ export const heroData = {
 export const aboutData = {
   img: "profile.jpeg",
   paragraphOne:
-    "Hi there, I'm Hannah! I'm a former budget and public policy analyst turned JavaScript engineer.",
+    "Hi there, I'm Hannah! I'm a former budget and public policy analyst turned software engineer.",
   paragraphTwo:
-    "My passion for learning how things work led me to a career in software and web development. My goal is to implement solid solutions towards any problem and to work on a collaborative team building helpful products for the end user.",
+    "My passion for learning how things work led me to a career in technology. My goal is to implement solid solutions towards any problem and to work on a collaborative team building helpful products for the end user.",
   paragraphThree:
-    "Currently I'm a Frontend Engineer at a creative agency in Los Angeles, CA working on a variety of sites and maintaining a custom React CMS platform.",
-  paragraphFour:
+    "Currently I'm a Front End Engineer at a creative agency in Los Angeles, CA working on a variety of sites and maintaining a custom CMS platform built with React.",
+  paragraphFour: "Here are some of the technologies I use: ",
+  paragraphFive:
     " JavaScript, React, Gatsby, Express, Node.js, MongoDB, PostgreSQL",
-  paragraphFive: "Here are some of the technologies I use: ",
 }
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: uuidv4(),
+    img: "barCharts.png",
+    img2: "pieCharts.png",
+    title: "MyMoney",
+    info:
+      "A personal finance app to visualize spending habits. Enter transactions manually or upload a CSV file to view charts by month and category. Includes JSON Web Tokens for user authentication.",
+    info2: "React, Express, Node.js, MongoDB, Chart.js",
+    url: "https://my-money-mern.herokuapp.com/",
+    repo: "https://github.com/RunHannah/my-money",
+  },
   {
     id: uuidv4(),
     img: "nps.png",
@@ -51,21 +62,9 @@ export const projectsData = [
     title: "National Park Service",
     info:
       "View a list of national parks, national monuments, and other natural and cultural resources by state. Based on the official site's landing and park list pages.",
-    info2:
-      "React, Express, Node.js, MongoDB, Mapbox API, National Park Service API",
+    info2: "React, Express, Node.js, Mapbox API, National Park Service API",
     url: "https://natparkservice.herokuapp.com/",
     repo: "https://github.com/RunHannah/national-park-service",
-  },
-  {
-    id: uuidv4(),
-    img: "barCharts.png",
-    img2: "pieCharts.png",
-    title: "MyMoney",
-    info:
-      "A personal finance app to track your spending habits. Enter transactions manually or upload a CSV file, to view charts by month and category. Includes JSON Web Tokens for user authentication.",
-    info2: "React, Express, Node.js, MongoDB, Chart.js",
-    url: "https://my-money-mern.herokuapp.com/",
-    repo: "https://github.com/RunHannah/my-money",
   },
 ]
 
