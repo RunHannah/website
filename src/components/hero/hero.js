@@ -46,7 +46,7 @@ const Hero = () => {
             left={isDesktop}
             bottom={isMobile}
             duration={1000}
-            delay={500}
+            delay={800}
             distance="30px"
           >
             <ul className="list-none flex flex-row justify-start">

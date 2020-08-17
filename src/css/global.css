@@ -102,7 +102,6 @@ body {
   color: #dddce5;
 }
 
-/* svg */
 @media (max-width: 736px) and (orientation: landscape) {
   .desktopSvg {
     position: relative;
@@ -111,6 +110,11 @@ body {
 
   .desktopSvg > img {
     width: 12rem;
+  }
+
+  .notFoundSvg {
+    width: 12rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -122,6 +126,11 @@ body {
 
   .desktopSvg > img {
     width: 12rem;
+  }
+
+  .notFoundSvg {
+    width: 12rem;
+    margin-bottom: 5rem;
   }
 }
 
