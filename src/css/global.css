@@ -102,6 +102,29 @@ body {
   color: #dddce5;
 }
 
+/* svg */
+@media (max-width: 736px) and (orientation: landscape) {
+  .desktopSvg {
+    position: relative;
+    bottom: 4rem;
+  }
+
+  .desktopSvg > img {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 812px) and (orientation: landscape) {
+  .desktopSvg {
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .desktopSvg > img {
+    width: 12rem;
+  }
+}
+
 @media (min-width: 768px) {
   .projects::before,
   .projects::after,

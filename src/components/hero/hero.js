@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react"
 import { Link } from "react-scroll"
 import Fade from "react-reveal/Fade"
 import PortfolioContext from "../../context/context"
+import Responsive from "../../images/responsive.svg"
 
 const Hero = () => {
   const { hero } = useContext(PortfolioContext)
@@ -23,43 +24,65 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="h-screen m-8 flex flex-col mt-0 text-center justify-center md:w-4xl md:mx-8 ">
+        <div>
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={1000}
+            delay={500}
+            distance="30px"
+          >
+            <h1 className="mb-8 text-2xl text-left md:text-3xl lg:text-4xl leading-normal md:w-3/4">
+              {greeting}
+              <span className="name text-4xl md:text-4xl lg:text-6xl font-extrabold">
+                {name}
+              </span>
+              <br />
+              <span className="role">{role}</span>
+              {subtitle}
+            </h1>
+          </Fade>
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={1000}
+            delay={500}
+            distance="30px"
+          >
+            <ul className="list-none flex flex-row justify-start">
+              {links &&
+                links.map(item => (
+                  <li
+                    key={item.id}
+                    className="list-none btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border rounded font-bold"
+                  >
+                    <Link
+                      to={item.route}
+                      smooth
+                      duration={1000}
+                      href={item.path}
+                    >
+                      {item.section}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </Fade>
+        </div>
         <Fade
-          left={isDesktop}
-          bottom={isMobile}
-          duration={1000}
-          delay={500}
-          distance="30px"
-        >
-          <h1 className="mb-8 text-2xl text-left md:text-3xl lg:text-4xl leading-normal md:w-3/4">
-            {greeting}
-            <span className="name text-4xl md:text-4xl lg:text-6xl font-extrabold">
-              {name}
-            </span>
-            <br />
-            <span className="role">{role}</span>
-            {subtitle}
-          </h1>
-        </Fade>
-        <Fade
-          left={isDesktop}
+          right={isDesktop}
           bottom={isMobile}
           duration={1000}
           delay={1000}
           distance="30px"
         >
-          <ul className="list-none flex flex-row justify-start">
-            {links &&
-              links.map(item => (
-                <li
-                  key={item.id}
-                  className="list-none btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border rounded font-bold"
-                >
-                  <Link to={item.route} smooth duration={1000} href={item.path}>
-                    {item.section}
-                  </Link>
-                </li>
-              ))}
-          </ul>
+          <div className="desktopSvg flex flex-row justify-end mt-8">
+            <img
+              className="w-48 sm:w-64 lg:w-full lg:max-w-md"
+              src={Responsive}
+              alt="responsive"
+            />
+          </div>
         </Fade>
       </div>
     </section>
