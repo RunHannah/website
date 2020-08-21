@@ -3,10 +3,16 @@ module.exports = {
   theme: {
     colors: {
       gold: "#ffce5c",
-      blue: "#9cb9e7",
+      blue: "#81b2ff",
       pearl: "#dbdbe2",
+      purple: "#480c48",
+      brightPurple: "#8006fb",
     },
   },
-  variants: {},
+  variants: {
+    backgroundColor: ["responsive", "hover", "focus", "active"],
+    borderColor: ["active"],
+    text: ["hover", "focus", "active"],
+  },
   plugins: [],
 }

@@ -21,7 +21,7 @@ const Footer = () => {
           to="hero"
           smooth
           duration={1000}
-          className="text-pearl mb-5 text-2xl lg:text-2xl cursor-pointer"
+          className="text-pearl mb-5 text-2xl lg:text-2xl cursor-pointer hover:text-brightPurple focus:text-brightPurple"
         >
           <FontAwesomeIcon icon={faAngleUp} />
         </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
-                  className="text-gold text-xl lg:text-2xl mx-4"
+                  className="text-gold text-xl lg:text-2xl mx-4 hover:text-brightPurple focus:text-brightPurple"
                 >
                   <FontAwesomeIcon icon={fontName} />
                 </a>

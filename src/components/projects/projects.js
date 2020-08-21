@@ -43,7 +43,15 @@ const Projects = () => {
               >
                 <div className="flex-col mb-8 md:w-1/2 md:mr-16">
                   <h3 className="text-gold mb-4 font-bold text-lg lg:text-xl xl:text-2xl">
-                    {title}
+                    <a
+                      className="hover:text-brightPurple focus:text-brightPurple"
+                      href={url || "#!"}
+                      target="_blank"
+                      aria-label="Project Link"
+                      rel="noopener noreferrer"
+                    >
+                      {title}
+                    </a>
                   </h3>
                   <div>
                     <p className="md:text-base lg:text-lg">{info}</p>
@@ -59,7 +67,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gold text-2xl mr-5"
+                      className="text-gold text-2xl mr-5 hover:text-brightPurple focus:text-brightPurple"
                       href={url || "#!"}
                     >
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -68,7 +76,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gold text-2xl mr-5"
+                      className="text-gold text-2xl mr-5 hover:text-brightPurple focus:text-brightPurple"
                       href={repo || "#!"}
                     >
                       <FontAwesomeIcon icon={faGithub} />

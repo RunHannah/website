@@ -54,7 +54,7 @@ const Hero = () => {
                 links.map(item => (
                   <li
                     key={item.id}
-                    className="list-none btn-text border-gold text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border rounded font-bold"
+                    className="list-none btn-text border-gold hover:bg-purple active:border-brightPurple focus:outline-none focus:shadow-outline text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border rounded font-bold"
                   >
                     <Link
                       className="hover:bg-"
