@@ -5,8 +5,7 @@ module.exports = {
       gold: "#ffce5c",
       blue: "#81b2ff",
       pearl: "#dbdbe2",
-      purple: "#480c48",
-      brightPurple: "#8006fb",
+      brightPurple: "#6826aa",
     },
   },
   variants: {
