@@ -34,7 +34,7 @@ html {
 body {
   font-family: "Open Sans";
   background-color: #1b0b1f;
-  color: #e8e8ee;
+  color: #dbdbe2;
 }
 
 .svg-inline--fa.fa-w-14 {
@@ -76,30 +76,6 @@ body {
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.btn-text {
-  border-color: #ffce5c;
-}
-
-.title,
-.role,
-.name {
-  color: #9cb9e7;
-}
-
-.projectTitle,
-.projectLink,
-.socialIcon,
-.arrowUp,
-.angleRight,
-.made {
-  color: #ffce5c;
-}
-
-.arrowUp,
-.made {
-  color: #dddce5;
 }
 
 @media (max-width: 736px) and (orientation: landscape) {

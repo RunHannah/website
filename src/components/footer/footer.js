@@ -21,7 +21,7 @@ const Footer = () => {
           to="hero"
           smooth
           duration={1000}
-          className="arrowUp mb-5 text-2xl lg:text-2xl cursor-pointer"
+          className="text-pearl mb-5 text-2xl lg:text-2xl cursor-pointer"
         >
           <FontAwesomeIcon icon={faAngleUp} />
         </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
-                  className="socialIcon text-xl lg:text-2xl mx-4"
+                  className="text-gold text-xl lg:text-2xl mx-4"
                 >
                   <FontAwesomeIcon icon={fontName} />
                 </a>
@@ -60,7 +60,9 @@ const Footer = () => {
             })}
         </div>
 
-        <p className="made mb-4 text-sm">Built with Gatsby and Tailwind CSS</p>
+        <p className="made text-pearl mb-4 text-sm">
+          Built with Gatsby and Tailwind CSS
+        </p>
       </Fade>
     </footer>
   )

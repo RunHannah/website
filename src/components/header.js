@@ -16,7 +16,7 @@ const Header = () => (
           target="_blank"
           rel="noreferrer"
           aria-label="github"
-          className="socialIcon text-xl lg:text-2xl mx-4"
+          className="text-gold text-xl lg:text-2xl mx-4"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
@@ -25,7 +25,7 @@ const Header = () => (
           target="_blank"
           rel="noreferrer"
           aria-label="linkedin"
-          className="socialIcon text-xl lg:text-2xl mx-4"
+          className="text-gold text-xl lg:text-2xl mx-4"
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
@@ -34,7 +34,7 @@ const Header = () => (
           target="_blank"
           rel="noreferrer"
           aria-label="twitter"
-          className="socialIcon text-xl lg:text-2xl mx-4"
+          className="text-gold text-xl lg:text-2xl mx-4"
         >
           <FontAwesomeIcon icon={faTwitter} />
         </a>

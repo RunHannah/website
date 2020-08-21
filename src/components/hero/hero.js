@@ -34,11 +34,11 @@ const Hero = () => {
           >
             <h1 className="mb-8 text-2xl text-left md:text-3xl lg:text-4xl leading-normal md:w-3/4">
               {greeting}
-              <span className="name text-4xl md:text-4xl lg:text-6xl font-extrabold">
+              <span className="text-blue text-4xl md:text-4xl lg:text-6xl font-extrabold">
                 {name}
               </span>
               <br />
-              <span className="role">{role}</span>
+              <span className="role text-blue">{role}</span>
               {subtitle}
             </h1>
           </Fade>
@@ -54,9 +54,10 @@ const Hero = () => {
                 links.map(item => (
                   <li
                     key={item.id}
-                    className="list-none btn-text text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border rounded font-bold"
+                    className="list-none btn-text border-gold text-xs py-3 px-4 mr-4 sm:text-sm md:w-32 md:text-base md:py-4 md:mr-5 lg:text-lg lg:px-5 border-solid border rounded font-bold"
                   >
                     <Link
+                      className="hover:bg-"
                       to={item.route}
                       smooth
                       duration={1000}

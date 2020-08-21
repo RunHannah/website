@@ -60,7 +60,7 @@ const About = () => {
                     >
                       <FontAwesomeIcon
                         icon={faAngleRight}
-                        className="angleRight mr-1"
+                        className="text-gold mr-1"
                       />
                       {item}
                     </li>

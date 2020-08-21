@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const Label = ({ title }) => (
   <Fade bottom duration={1000} delay={300} distance="0px">
-    <h2 className="title text-center tracking-wider">{title}</h2>
+    <h2 className="title text-blue text-center tracking-wider">{title}</h2>
   </Fade>
 )
 

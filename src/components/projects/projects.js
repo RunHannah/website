@@ -42,7 +42,7 @@ const Projects = () => {
                 distance="30px"
               >
                 <div className="flex-col mb-8 md:w-1/2 md:mr-16">
-                  <h3 className="projectTitle mb-4 font-bold text-lg lg:text-xl xl:text-2xl">
+                  <h3 className="text-gold mb-4 font-bold text-lg lg:text-xl xl:text-2xl">
                     {title}
                   </h3>
                   <div>
@@ -59,7 +59,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="projectLink text-2xl mr-5"
+                      className="text-gold text-2xl mr-5"
                       href={url || "#!"}
                     >
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -68,7 +68,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="projectLink text-2xl mr-5"
+                      className="text-gold text-2xl mr-5"
                       href={repo || "#!"}
                     >
                       <FontAwesomeIcon icon={faGithub} />
