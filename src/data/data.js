@@ -46,8 +46,8 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv4(),
-    img: "barCharts.png",
-    img2: "pieCharts.png",
+    img: "charts.png",
+    img2: "form.png",
     title: "MyMoney",
     info:
       "A personal finance app to visualize spending habits. Enter transactions manually or upload a CSV file to view charts by month and category. Includes JSON Web Tokens for user authentication.",
