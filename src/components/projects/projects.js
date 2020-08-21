@@ -67,7 +67,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gold text-2xl mr-5 hover:text-brightPurple focus:text-brightPurple"
+                      className="text-gold text-2xl lg:text-3xl mr-5 hover:text-brightPurple focus:text-brightPurple"
                       href={url || "#!"}
                     >
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -76,7 +76,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gold text-2xl mr-5 hover:text-brightPurple focus:text-brightPurple"
+                      className="text-gold text-2xl lg:text-3xl mr-5 hover:text-brightPurple focus:text-brightPurple"
                       href={repo || "#!"}
                     >
                       <FontAwesomeIcon icon={faGithub} />
