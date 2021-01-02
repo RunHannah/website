@@ -64,14 +64,18 @@ const Projects = () => {
                     </ul>
                   </div>
                   <span className="flex flex-row md:justify-start">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gold text-2xl lg:text-3xl mr-5 hover:text-brightPurple focus:text-brightPurple"
-                      href={url || "#!"}
-                    >
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
-                    </a>
+                    {
+                      url && !url.includes('github') && (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gold text-2xl lg:text-3xl mr-5 hover:text-brightPurple focus:text-brightPurple"
+                        href={url || "#!"}
+                      >
+                        <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      </a>
+                      )
+                    }
 
                     <a
                       target="_blank"

@@ -36,10 +36,10 @@ export const aboutData = {
   paragraphTwo:
     "My passion for learning how things work led me to a career in technology. My goal is to implement solid solutions towards any problem and to work on a collaborative team building helpful products for the end user.",
   paragraphThree:
-    "Currently I'm a Front End Engineer at a creative agency in Los Angeles, CA working on a variety of sites and maintaining a custom CMS platform built with React.",
+    "Currently I'm a Front End Engineer at a creative agency in Los Angeles, CA working on a variety of high-traffic sites and maintaining a proprietary CMS platform written in JavaScript using React.",
   paragraphFour: "Here are some of the technologies I use: ",
   paragraphFive:
-    " JavaScript, React, Gatsby, Express, Node.js, MongoDB, PostgreSQL",
+    " JavaScript, Python, Flask, React, Gatsby, Node.js, Express, MongoDB, PostgreSQL, HTML, CSS",
 }
 
 // PROJECTS DATA
@@ -51,7 +51,7 @@ export const projectsData = [
     title: "MyMoney",
     info:
       "A personal finance app to visualize spending habits. Enter transactions manually or upload a CSV file to view charts by month and category. Includes JSON Web Tokens for user authentication.",
-    info2: "React, Express, Node.js, MongoDB, Chart.js",
+    info2: "JavaScript, React, Express, Node.js, MongoDB, Chart.js",
     url: "https://my-money-mern.herokuapp.com/",
     repo: "https://github.com/RunHannah/my-money",
   },
@@ -62,9 +62,20 @@ export const projectsData = [
     title: "National Park Service",
     info:
       "View a list of national parks, national monuments, and other natural and cultural resources by state. Based on the official site's landing and park list pages.",
-    info2: "React, Express, Node.js, Mapbox API, National Park Service API",
+    info2: "JavaScript, React, Express, Node.js, Mapbox API, National Park Service API",
     url: "https://natparkservice.herokuapp.com/",
     repo: "https://github.com/RunHannah/national-park-service",
+  },
+   {
+    id: uuidv4(),
+    img: "flix1.png",
+    img2: "flix2.png",
+    title: "RandoFlix",
+    info:
+      "RandoFlix generates a random movie or show suggestion based on Netflix content as of 2019. Save content, edit your saved list, and navigate directly to the content's site on Netflix to start watching!",
+    info2: "Python, JavaScript, Flask, PostgreSQL, SQLAlchemy, OMDB API, CSV data from kaggle.com",
+    url: "https://github.com/RunHannah/watch_movies",
+    repo: "https://github.com/RunHannah/watch_movies",
   },
 ]
 
