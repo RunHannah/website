@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid"
 export const heroData = {
   greeting: "Hi, I'm ",
   name: "Hannah",
-  role: "Software Engineer ",
+  role: "Full Stack Engineer ",
   subtitle: "who builds products using modern technologies",
   links: [
     {
@@ -32,11 +32,11 @@ export const heroData = {
 export const aboutData = {
   img: "profile.jpeg",
   paragraphOne:
-    "Hi there, I'm Hannah! I'm a former budget and public policy analyst turned software engineer.",
+    "Hi there, I'm Hannah! I'm a former civil servant turned full stack engineer.",
   paragraphTwo:
     "My passion for learning how things work led me to a career in technology. My goal is to implement solid solutions towards any problem and to work on a collaborative team building helpful products for the end user.",
   paragraphThree:
-    "Currently I'm a Front End Engineer at a creative agency in Los Angeles, CA working on a variety of high-traffic sites and maintaining a proprietary CMS platform written in JavaScript using React.",
+    "Currently I'm a Web Engineer at a modern data platform company where I work at the intersection of web development and marketing using the MERN stack (MongoDB, Express, React, Node.js).",
   paragraphFour: "Here are some of the technologies I use: ",
   paragraphFive:
     " JavaScript, Python, Flask, React, Gatsby, Node.js, Express, MongoDB, PostgreSQL, HTML, CSS",
@@ -66,7 +66,7 @@ export const projectsData = [
     url: "https://natparkservice.herokuapp.com/",
     repo: "https://github.com/RunHannah/national-park-service",
   },
-   {
+  {
     id: uuidv4(),
     img: "flix1.png",
     img2: "flix2.png",
